@@ -47,7 +47,7 @@ class Memorama {
             const imgLabel = card.children[1].children[0];
 
             card.dataset.image = image;
-            imgLabel.src = `./images/${image}.jpg`;
+            imgLabel.src = `https://randomfox.ca/images/${image}.jpg`;
 
         }
 
@@ -173,3 +173,8 @@ document.addEventListener("DOMContentLoaded", () => {
     new Memorama();
 
 });
+function redireccion(){
+    location.href = "index.html"
+
+}
+
