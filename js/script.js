@@ -173,3 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new Memorama();
 
 });
+function redireccion(){
+    location.href = "memorama.html"
+
+}
