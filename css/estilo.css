@@ -5,7 +5,7 @@
 h1 {
   text-align: center;
   background: white;
-  margin: 2em;
+  margin: 1em;
   color: rgb(134, 3, 14);
 }
 
@@ -27,7 +27,7 @@ figure {
   position: relative;
   transition: all ease 0.5s;
   transform-style: preserve-3d;
-  transform: perspective(600px) rotateY(0deg);
+  transform: perspective(700px) rotateY(0deg);
   cursor: pointer;
   box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.6);
 }
@@ -55,6 +55,8 @@ figure .back {
   display: block;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+          width: 100%;
+
 }
 
 figure .searched-image {
@@ -64,48 +66,7 @@ figure .searched-image {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   height: 100%;
+  width: 100%;
+
   overflow: hidden;
 }/*# sourceMappingURL=estilo.css.map */
-
-.centered-elements {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  width: 100%;
-}
-.btn {
-  position: relative;
-  display: block;
-  height: 77px;
-  width: 300px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  background-color: transparent;
-  color: #fff;
-  font-size: 18px;
-  overflow: hidden;
-  transition: all 500ms ease;
-  border: 2px solid #20e2d7;
-  margin-bottom: 40px;
-  z-index: 0;
-  font-weight: 700;
-  cursor: pointer;
-
-}
-.btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: auto;
-  background-color: #20e2d7;
-  transition: all 500ms ease;
-  z-index: -1;
-}
-.btn--2:hover {
-  background-color: #20e2d7;
-  box-shadow: 0 0 10px #20e2d7, 0 0 20px #20e2d7, 0 0 20px #20e2d7;
-  color: #434343;
-}
